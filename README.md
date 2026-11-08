@@ -62,5 +62,8 @@ load the card falls back to plain glass rather than breaking.
   by poured-batter edges (`BatterEdge`).
 - The hours bar and every "open now" indicator are computed from the visitor's clock, so they
   stay honest after midnight.
+- `LocationCard` draws a stylised street plan in SVG instead of embedding Google Maps, which is
+  blocked on some networks and renders as an empty frame. The real routing is the directions
+  link, which opens Google Maps in a new tab.
 - `prefers-reduced-motion: reduce` turns off the reveal transitions, the floating card and
   badge, and the button hover zoom, and leaves everything visible and in place.

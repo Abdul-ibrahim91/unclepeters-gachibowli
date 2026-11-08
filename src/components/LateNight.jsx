@@ -30,9 +30,9 @@ export default function LateNight() {
               style={{ '--reveal-delay': '90ms' }}
               className="mt-5 max-w-[46ch] text-[1.05rem] leading-relaxed text-choc-800"
             >
-              Seven nights a week. Walk in from a late shift in the Financial District, a film
-              that ran long, or a hostel kitchen that has nothing in it — the iron is hot and the
-              batter is fresh.
+              Seven nights a week. Walk in from a late shift in the Financial District, a film that
+              ran long, or a hostel kitchen that has nothing in it — the iron is hot and the batter
+              is fresh.
             </p>
           </div>
 
@@ -109,10 +109,7 @@ export default function LateNight() {
           </div>
         </div>
 
-        <div
-          data-reveal
-          className="mt-10 flex flex-wrap gap-3 border-t border-choc-900/20 pt-8"
-        >
+        <div data-reveal className="mt-10 flex flex-wrap gap-3 border-t border-choc-900/20 pt-8">
           <a
             href={whatsappUrl}
             target="_blank"

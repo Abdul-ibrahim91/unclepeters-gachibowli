@@ -1,5 +1,6 @@
 import { site, whatsappUrl } from '../site.js'
 import BatterEdge from './BatterEdge.jsx'
+import LocationCard from './LocationCard.jsx'
 import { PhoneIcon, PinIcon, WhatsAppIcon } from './Icons.jsx'
 
 const NEARBY = [
@@ -71,23 +72,7 @@ export default function Visit() {
           </div>
 
           <div data-reveal="right" className="md:pt-4">
-            <div className="overflow-hidden rounded-3xl border-2 border-cream-100/15 bg-choc-800">
-              <iframe
-                title={`Map showing ${site.name} in ${site.area}, ${site.city}`}
-                src="https://www.google.com/maps?q=Uncle+Peters+Pancakes+Gachibowli+Hyderabad&output=embed"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="block h-64 w-full border-0 sm:h-80"
-              />
-            </div>
-            <a
-              href={site.mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 inline-block text-sm font-semibold text-gold-300 underline decoration-gold-400/50 decoration-2 underline-offset-4 hover:text-gold-200"
-            >
-              Open directions in Google Maps
-            </a>
+            <LocationCard />
           </div>
         </div>
       </div>

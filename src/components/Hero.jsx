@@ -1,39 +1,28 @@
-import { useState } from "react";
-import { heroPhoto, showcase, site, whatsappUrl } from "../site.js";
-import { useOpenStatus } from "../hooks/useOpenStatus.js";
-import {
-  PhoneIcon,
-  StarIcon,
-  WhatsAppIcon,
-  WheatFreeIcon,
-  MoonIcon,
-} from "./Icons.jsx";
+import { useState } from 'react'
+import { heroPhoto, showcase, site, whatsappUrl } from '../site.js'
+import { useOpenStatus } from '../hooks/useOpenStatus.js'
+import { PhoneIcon, StarIcon, WhatsAppIcon, WheatFreeIcon, MoonIcon } from './Icons.jsx'
 
 const zoom =
-  "transition duration-300 ease-out motion-safe:hover:scale-[1.045] motion-safe:active:scale-[0.985]";
+  'transition duration-300 ease-out motion-safe:hover:scale-[1.045] motion-safe:active:scale-[0.985]'
 
 function PriceRow({ item }) {
   return (
     <li className="flex items-baseline justify-between gap-4">
       <span className="text-[0.95rem] text-cream-100/90">{item.name}</span>
-      <span className="font-display text-base text-gold-300">
-        ₹{item.price}
-      </span>
+      <span className="font-display text-base text-gold-300">₹{item.price}</span>
     </li>
-  );
+  )
 }
 
 export default function Hero() {
-  const { isOpen, note } = useOpenStatus();
-  const { featured, alsoTonight } = showcase;
+  const { isOpen, note } = useOpenStatus()
+  const { featured, alsoTonight } = showcase
   // If the photograph cannot be reached, the card falls back to plain glass.
-  const [photoLoaded, setPhotoLoaded] = useState(true);
+  const [photoLoaded, setPhotoLoaded] = useState(true)
 
   return (
-    <section
-      id="top"
-      className="relative overflow-hidden pt-24 pb-16 sm:pt-28 lg:pb-24"
-    >
+    <section id="top" className="relative overflow-hidden pt-24 pb-16 sm:pt-28 lg:pb-24">
       {/* warm light behind the whole hero */}
       <div
         aria-hidden="true"
@@ -48,7 +37,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-gold-400/35 bg-choc-800/60 px-3.5 py-1.5 text-xs font-semibold tracking-wide"
           >
             <span
-              className={`relative flex h-2 w-2 ${isOpen ? "text-open" : "text-gold-400"}`}
+              className={`relative flex h-2 w-2 ${isOpen ? 'text-open' : 'text-gold-400'}`}
               aria-hidden="true"
             >
               <span className="absolute inset-0 rounded-full bg-current opacity-60 motion-safe:animate-ping" />
@@ -59,7 +48,7 @@ export default function Hero() {
 
           <h1
             data-reveal="rise"
-            style={{ "--reveal-delay": "90ms" }}
+            style={{ '--reveal-delay': '90ms' }}
             className="hero-title mt-6 max-w-[15ch] text-hero text-cream-50"
           >
             Fluffy pancakes &amp; crispy waffles
@@ -70,16 +59,16 @@ export default function Hero() {
 
           <p
             data-reveal
-            style={{ "--reveal-delay": "220ms" }}
+            style={{ '--reveal-delay': '220ms' }}
             className="mt-7 max-w-[38ch] text-[1.05rem] leading-relaxed text-cream-200/80 sm:text-lg"
           >
-            A small dessert counter off the Gachibowli flyover. Batter rested,
-            griddled to order, plated the minute it leaves the iron.
+            A small dessert counter off the Gachibowli flyover. Batter rested, griddled to order,
+            plated the minute it leaves the iron.
           </p>
 
           <div
             data-reveal
-            style={{ "--reveal-delay": "320ms" }}
+            style={{ '--reveal-delay': '320ms' }}
             className="mt-9 flex flex-wrap items-center gap-3"
           >
             <a
@@ -102,7 +91,7 @@ export default function Hero() {
 
           <p
             data-reveal
-            style={{ "--reveal-delay": "400ms" }}
+            style={{ '--reveal-delay': '400ms' }}
             className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-semibold text-cream-200/75"
           >
             <span className="flex items-center gap-2">
@@ -117,11 +106,7 @@ export default function Hero() {
         </div>
 
         {/* ---------------- right: the showcase ---------------- */}
-        <div
-          data-reveal="right"
-          style={{ "--reveal-delay": "160ms" }}
-          className="lg:order-last"
-        >
+        <div data-reveal="right" style={{ '--reveal-delay': '160ms' }} className="lg:order-last">
           <div className="relative mx-auto w-full max-w-[25rem] pb-14 lg:max-w-[27rem]">
             {/* golden light pooling behind the glass */}
             <div
@@ -180,10 +165,10 @@ export default function Hero() {
                     </p>
                     <p className="flex items-center gap-1.5 text-xs font-semibold text-cream-200/80">
                       <span
-                        className={`h-1.5 w-1.5 rounded-full ${isOpen ? "bg-open" : "bg-gold-500"}`}
+                        className={`h-1.5 w-1.5 rounded-full ${isOpen ? 'bg-open' : 'bg-gold-500'}`}
                         aria-hidden="true"
                       />
-                      {isOpen ? "Griddle on" : "Griddle off"}
+                      {isOpen ? 'Griddle on' : 'Griddle off'}
                     </p>
                   </div>
 
@@ -195,9 +180,7 @@ export default function Hero() {
                   </p>
 
                   <p className="mt-5 flex items-baseline gap-2">
-                    <span className="font-display text-4xl text-gold-300">
-                      ₹{featured.price}
-                    </span>
+                    <span className="font-display text-4xl text-gold-300">₹{featured.price}</span>
                     <span className="text-xs font-semibold text-cream-200/70">
                       stack of five, serves one generously
                     </span>
@@ -234,13 +217,10 @@ export default function Hero() {
                   </span>
                   <span className="text-[0.72rem] font-semibold leading-tight text-cream-200/80">
                     Rated on Google
-                    <span className="block text-cream-200/60">
-                      {site.reviewCount}+ reviews
-                    </span>
+                    <span className="block text-cream-200/60">{site.reviewCount}+ reviews</span>
                   </span>
                   <span className="sr-only">
-                    Rated {site.rating} out of 5 from {site.reviewCount}+ Google
-                    reviews
+                    Rated {site.rating} out of 5 from {site.reviewCount}+ Google reviews
                   </span>
                 </p>
               </div>
@@ -249,5 +229,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -55,10 +55,7 @@ export default function Nav() {
         <ul className="hidden items-center gap-7 text-sm font-semibold md:flex">
           {LINKS.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
-                className="text-cream-200 transition-colors hover:text-gold-300"
-              >
+              <a href={link.href} className="text-cream-200 transition-colors hover:text-gold-300">
                 {link.label}
               </a>
             </li>
@@ -67,9 +64,7 @@ export default function Nav() {
 
         <p className="flex items-center gap-2 rounded-full border border-cream-100/20 bg-choc-800/70 px-3 py-1.5 text-xs font-semibold">
           <span
-            className={`h-2 w-2 shrink-0 rounded-full ${
-              isOpen ? 'bg-open' : 'bg-gold-500'
-            }`}
+            className={`h-2 w-2 shrink-0 rounded-full ${isOpen ? 'bg-open' : 'bg-gold-500'}`}
             aria-hidden="true"
           />
           {isOpen ? 'Open now' : 'Closed'}

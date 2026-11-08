@@ -27,9 +27,9 @@ export const site = {
 
   addressLines: ['Plot 00, Gachibowli Main Road', 'Gachibowli, Hyderabad 500032'],
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Uncle+Peter's+Pancakes+Gachibowli+Hyderabad",
+    'https://www.google.com/maps/search/?api=1&query=Uncle+Peters+Pancakes+Gachibowli+Hyderabad',
   reviewsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Uncle+Peter's+Pancakes+Gachibowli+Hyderabad",
+    'https://www.google.com/maps/search/?api=1&query=Uncle+Peters+Pancakes+Gachibowli+Hyderabad',
 }
 
 export const whatsappUrl = `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(

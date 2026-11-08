@@ -123,11 +123,7 @@
 }
 
 .grain {
-  background-image: radial-gradient(
-    circle at 1px 1px,
-    rgba(110, 70, 30, 0.16) 1px,
-    transparent 0
-  );
+  background-image: radial-gradient(circle at 1px 1px, rgba(110, 70, 30, 0.16) 1px, transparent 0);
   background-size: 7px 7px;
 }
 
@@ -154,8 +150,6 @@
     padding-bottom: 3rem;
   }
 }
-
-
 
 /* The hero runs beside the illustration from lg up, so the headline scales
    against a narrower column there. */
