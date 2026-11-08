@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Pancake stack">
+  <rect width="64" height="64" rx="14" fill="#1E1109" />
+  <ellipse cx="32" cy="45" rx="21" ry="6.5" fill="#C97E22" />
+  <ellipse cx="32" cy="37.5" rx="22" ry="7" fill="#E9A33A" />
+  <ellipse cx="32" cy="30" rx="23" ry="7.5" fill="#F2BC55" />
+  <path
+    d="M32 22c7 0 12 2.6 12 5.3 0 1-1 1.6-2 1.2-1.4-.6-2 .9-3.4.6-1.3-.3-1.6-1.6-3.2-1.4-1.5.2-1.8 1.7-3.4 1.7s-2-1.5-3.5-1.7c-1.6-.2-1.9 1.1-3.2 1.4-1.4.3-2-1.2-3.4-.6-1 .4-2-.2-2-1.2C20 24.6 25 22 32 22z"
+    fill="#FFF6E6"
+  />
+  <circle cx="32" cy="19.5" r="4.5" fill="#FFD66B" />
+</svg>
